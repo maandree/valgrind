@@ -293,6 +293,9 @@ DECL_TEMPLATE(linux, sys_memfd_create);
 
 DECL_TEMPLATE(linux, sys_syncfs);
 
+// Linux-specific (new in Linux 4.11)
+DECL_TEMPLATE(linux, sys_statx);
+
 /* ---------------------------------------------------------------------
    Wrappers for sockets and ipc-ery.  These are split into standalone
    procedures because x86-linux hides them inside multiplexors

@@ -827,7 +827,8 @@ static SyscallTableEntry syscall_main_table[] = {
    LINX_ (__NR_process_vm_writev, sys_process_vm_writev),
    LINXY(__NR_getrandom, sys_getrandom),
    LINXY(__NR_memfd_create, sys_memfd_create),
-   LINX_(__NR_syncfs, sys_syncfs)
+   LINX_(__NR_syncfs, sys_syncfs),
+   LINX_(__NR_statx, sys_statx),
 };
 
 SyscallTableEntry * ML_(get_linux_syscall_entry) ( UInt sysno )
